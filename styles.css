@@ -1,0 +1,142 @@
+body {
+  font-family: 'Sansation', sans-serif;
+
+}
+/* global styles */
+ button {
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-transform: capitalize;
+    cursor: pointer;
+ }  
+ h3{
+    font-size: 20px;
+ }
+ .fa-arrow-right{
+color: #fff;
+ }
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+align-items: center;
+margin-top: 30px;
+}
+ .logo{
+     width: 220px;
+}
+ .main-container{
+    display: flex;
+    /* margin: 50px; */
+    /* justify-content: center; */
+ }
+ .content{
+  border: 2px solid red;
+  /* width: 300px; */
+  max-width: 100%;
+  height: auto;
+  margin: 20px;
+  align-items: center;
+ }
+  .main-section:not(:last-child){
+    border-right: 3px solid #d6dadb;
+  }
+  .main-section img{
+    width: 300px;
+    /* max-width: 100%; */
+    height: auto;
+    margin: 20px;
+    border: 2px solid red;
+  }
+   .align-header{
+    background-color: #83959E;
+    font-size: 36px;
+    font-weight: 800; 
+    /* width: 300px;  */
+   }
+   .align-subtitle{
+    color: #83959E;
+    text-align: center;
+   }
+   .align-Visit{
+    background-color: #83959E;
+    padding: 10px 20px;
+     font-size: 16px;
+    
+   }
+   .consumer-header{
+    background-color: #66AD8E;
+    font-size: 36px;  
+   }
+   .consumer-subtitle{
+    color: #66AD8E;
+    text-align: center;
+   }
+   .consumer-visit{
+    padding: 10px 18px;
+    font-size: 16px;
+    background-color:#66AD8E;
+   }
+   .safety-header{
+    background-color: #F68631; 
+    font-size: 36px;  
+   }
+   .safety-subtitle{
+    color: #F68631; 
+text-align: center;
+   }
+    .safety-visit{
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color:#F68631; 
+    }
+    .sci-header{
+      background-color: #82BDBF;
+      font-size: 36px;  
+     }
+     .sci-subtitle{
+      color: #82BDBF;
+text-align: center;
+     }
+    .sci-visit {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color:#82BDBF;
+    }
+   /* footer styles */
+   .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%; 
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    
+  }
+
+  .footer p {
+    margin: 0;
+  }
+
+  .footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  /* @media (max-width: 768px) {
+     .footer p {
+      flex-direction: column;
+    } 
+
+    .footer p a {
+      margin: 10px 0;
+      display: block;
+    }
+    .footer p:nth-child(2) {
+        display: flex;
+        justify-content: center;
+      }
+  } */
