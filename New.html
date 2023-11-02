@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Laserglow - Scientific Lab Lasers, Industrial Alignment Lasers & Safety
+      Equipment
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google tag manager added 3/11 -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-T4866K");
+    </script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      :root {
+        --scientific: #82bdbf;
+        --safety: #f68631;
+        --alignment: #83959e;
+        --consumer: #66ad8e;
+        --footer-background: #717171;
+      }
+      /* Body styles */
+      html,
+      body {
+        height: 100%;
+        font-family: "Roboto", sans-serif;
+        border: 0px;
+      }
+      .main {
+        display: flex;
+        flex-direction: column;
+        height: calc(100vh - 153px);
+        flex: 0 0 auto;
+        overflow-y: auto;
+      }
+
+      /* Header and Footer styles */
+
+      .entirety {
+        display: flex;
+        flex-direction: column;
+      }
+      .header {
+        width: 100%;
+        text-align: center;
+        padding-top: 12px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .header img {
+        min-height: 40px;
+        min-width: 200px;
+        width: 14vw;
+        max-height: 100px;
+        margin-top: 10px;
+      }
+      .footer {
+        width: 100%;
+        background-color: var(--footer-background);
+        color: #fff;
+        text-align: center;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 13px;
+        /* font-weight: lighter; */
+        flex-direction: column;
+        flex: 1;
+      }
+      .footer a {
+        color: #fff;
+        /* font-size: 11px; */
+        margin: 0 15px 0 15px;
+        text-decoration: none;
+      }
+
+      /* Content section styles */
+      .content-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .content-section img {
+        max-width: 100%;
+        height: auto;
+        /* height: 100%; */
+        margin: 20px;
+      }
+
+      .content-box {
+        width: calc(24% - 3px);
+        /* position: relative; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        padding-bottom: 20px;
+      }
+      .content-box:not(:last-child) {
+        border-right: 3px solid #d6dadb;
+      }
+      .content-box img {
+        /* width: 100%; */
+        width: 70%;
+        margin: 0px;
+        /* border: 3px solid navy; */
+      }
+
+      .categoryLabel {
+        /* color: #808080; */
+        font-weight: bold;
+        /* margin: auto; */
+        padding: 5px;
+        /* background-color: white; */
+        text-align: center;
+        font-size: 30px;
+        margin-top: 7px;
+        /* border: 2px solid red; */
+        border-radius: 4px;
+        text-transform: uppercase;
+        /* font-size: calc(14px + 1.5vw); */
+        width: 62%;
+        align-items: center;
+        /* border: 3px solid red; */
+        color: #fff;
+      }
+      .categoryText {
+        /* max-width: 250px; */
+        /* font-weight: bold; */
+        /* margin: auto; */
+        padding: 10px;
+        width: 90%;
+        font-size: 16px;
+        text-align: center;
+        /* font-size: calc(10px + 0.7vw); */
+      }
+
+      .cat-scientific {
+        background-color: var(--scientific);
+      }
+
+      .cat-safety {
+        background-color: var(--safety);
+      }
+
+      .cat-alignment {
+        background-color: var(--alignment);
+      }
+
+      .cat-consumer {
+        background-color: var(--consumer);
+      }
+
+      .text-scientific {
+        color: var(--scientific);
+      }
+
+      .text-safety {
+        color: var(--safety);
+      }
+
+      .text-alignment {
+        color: var(--alignment);
+      }
+
+      .text-consumer {
+        color: var(--consumer);
+      }
+      /* subtext styles */
+      .categoty-subtext {
+        font-size: 12px;
+        width: 68%;
+        text-align: center;
+        color: var(--footer-background);
+      }
+      .button {
+        display: inline-block;
+        padding: 7px 18px;
+        border-radius: 7px;
+        text-align: center;
+        cursor: pointer;
+        /* margin-top: 15px; */
+        /* background-color: var(--footer-background); */
+        color: #fff;
+        border: none;
+        margin-top: 5px;
+        /* width: 90%; */
+        /* max-width: 200px; */
+      }
+      .button-safety {
+        background-color: var(--safety);
+      }
+      .button-ali {
+        background-color: var(--alignment);
+      }
+      .button-consumer {
+        background-color: var(--consumer);
+      }
+      .button-sci {
+        background-color: var(--scientific);
+      }
+      .fa-arrow-right {
+        color: #fff;
+      }
+      h1 {
+        font-size: calc(10px + 0.8vw);
+        font-style: italic;
+        color: #818181;
+      }
+
+      /* Media queries */
+      @media only screen and (max-width: 800px) {
+        .content-section div {
+          width: calc(50% - 0px);
+          /* border: 2px solid red; */
+        }
+        .content-box:nth-of-type(2) {
+          border-right: 3px solid #ffffff;
+        }
+        .content-box:nth-of-type(1) {
+          border-bottom: 3px solid #d6dadb;
+        }
+        .content-box:nth-of-type(2) {
+          border-bottom: 3px solid #d6dadb;
+        }
+        .categoryText {
+          width: 100% !important;
+        }
+        .categoryLabel {
+          /* background-color: var(--scientific); */
+          /* color: #fff; */
+          font-size: 25px;
+          width: 100%;
+        }
+      }
+    </style>
+    <script>
+      function setChild2Height() {
+        const child2 = document.querySelector(".child2");
+        const child2Height = child2.offsetHeight;
+        document.documentElement.style.setProperty(
+          "--child2-height",
+          `${child2Height}px`
+        );
+      }
+
+      window.onload = setChild2Height;
+      window.onresize = setChild2Height;
+    </script>
+  </head>
+  <body>
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-T4866K"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+
+    <div class="entirety">
+      <div class="header">
+        <img
+          src="/Assets/laserglow_new_logo_2021.png"
+          alt="Laserglow Technologies"
+        />
+      </div>
+
+      <div class="main">
+        <div
+          style="
+            flex: 1;
+            height: calc((100vh - 150px - var(--content-section-height)) / 2);
+            background-color: white;
+          "
+        ></div>
+        <div class="content-section">
+          <div
+            class="content-box alignment"
+            onclick="window.location.href = '/product/byproduct/Brightline/';"
+          >
+            <img src="/New Assets/Alignment_Image.jpg" alt="Alignment" />
+            <div class="categoryLabel cat-alignment">Alignment</div>
+            <div class="categoryText text-alignment">
+              Alignment & Machine Vision Lasers
+            </div>
+            <p class="categoty-subtext">
+              Alignment lasers optimize workflows, expedite precision alignment,
+              bolster product quality, and eliminate the necessity for
+              supplementary alignment tools, resulting in heightened efficiency
+              and accuracy.
+            </p>
+            <button class="button button-ali">
+              VISIT
+              <a href="https://www.laserglow.com/product/byproduct/Brightline/"
+                ><i class="fa fa-arrow-right" aria-hidden="true"></i
+              ></a>
+            </button>
+          </div>
+          <div
+            class="content-box consumer"
+            onclick="window.location.href = '/consumer';"
+          >
+            <img src="/New Assets/Consumer_Image.jpg" alt="Consumer" />
+            <div class="categoryLabel cat-consumer">Consumer</div>
+            <div class="categoryText text-consumer">
+              Hobbyist, Enthusiast & Promotional Lasers
+            </div>
+            <p class="categoty-subtext">
+              Handheld lasers offer precision and dependability for business
+              presentations or recreational use, making them ideal for
+              educators, astronomers, and corporate presenters.
+            </p>
+            <button class="button button-consumer">
+              VISIT
+              <a href="https://www.laserglow.com/product/byproduct/Brightline/"
+                ><i class="fa fa-arrow-right" aria-hidden="true"></i
+              ></a>
+            </button>
+          </div>
+          <div
+            class="content-box safety"
+            onclick="window.location.href = 'https://safety.laserglow.com';"
+          >
+            <img src="/New Assets/Safety_Image.jpg" alt="Safety" />
+            <div class="categoryLabel cat-safety">Safety</div>
+            <div class="categoryText text-safety">
+              Industrial Safety & Hazard Management
+            </div>
+            <p class="categoty-subtext">
+              Advancing workplace safety through innovative safety projection
+              and collision avoidance systems that enhance hazard awareness and
+              foster secure industrial environments.
+            </p>
+            <button class="button button-safety">
+              VISIT
+              <a href="https://www.laserglow.com/product/byproduct/Brightline/"
+                ><i class="fa fa-arrow-right" aria-hidden="true"></i
+              ></a>
+            </button>
+          </div>
+          <div
+            class="content-box scientific"
+            onclick="window.location.href = '/scientific';"
+          >
+            <img src="/New Assets/Scientific_Image.jpg" alt="Scientific" />
+            <div class="categoryLabel cat-scientific">Scientific</div>
+            <div class="categoryText text-scientific">
+              Laboratory & OEM Laser Systems & Optics
+            </div>
+            <p class="categoty-subtext">
+              Cutting-edge scientific laser solutions, serving diverse fields
+              like physics, chemistry, and biology with a comprehensive product
+              range, expert technical support, and tailored solutions.
+            </p>
+            <button class="button button-sci">
+              VISIT
+              <a href="https://www.laserglow.com/product/byproduct/Brightline/"
+                ><i class="fa fa-arrow-right" aria-hidden="true"></i
+              ></a>
+            </button>
+          </div>
+        </div>
+        <div
+          style="
+            flex: 1;
+            height: calc((100vh - 150px - var(--content-section-height)) / 2);
+            background-color: white;
+          "
+        ></div>
+      </div>
+      <div class="footer">
+        <div style="width: 100%; height: 33px; padding-top: 10px">
+          <a href="/content/about">ABOUT US</a>
+          <a href="/content/contact">CONTACT US</a>
+          <a href="https://www.facebook.com/LaserglowTech">
+            <i class="fab fa-facebook social-icons"></i>
+          </a>
+          <a
+            href="https://twitter.com/i/flow/login?redirect_after_login=%2Flaserglowtech"
+            ><i class="fab fa-twitter social-icons"></i
+          ></a>
+          <a href="https://www.linkedin.com/company/laserglow-technologies"
+            ><i class="fab fa-linkedin social-icons"></i
+          ></a>
+          <a href="https://www.instagram.com/laserglow/"
+            ><i class="fab fa-instagram social-icons"></i
+          ></a>
+          <a href="https://www.youtube.com/c/LaserglowTechnologies"
+            ><i class="fab fa-youtube social-icons"></i
+          ></a>
+        </div>
+        <div style="width: 100%; height: 20px">
+          &copy; 2005-
+          <script type="text/javascript">
+            document.write(new Date().getFullYear());
+          </script>
+          Laserglow Technologies Inc. All rights reserved.
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
